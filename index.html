@@ -10,6 +10,7 @@
     <title>Six Figure Labs</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
   rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
@@ -31,7 +32,7 @@
                 </ul>
             </div>
             <div class="nav__right">
-                <a href="#" class="btn-outline shadow" id="contact-button">
+                <a href="#" class="btn-outline text-shadow" id="contact-button">
                     <div class="btn__text">
                         <h5 href="#">Contact</h5>
                     </div>
@@ -49,7 +50,7 @@
 
 
 
-    <section class="second">
+    <section class="second" data-aos="fade-up">
 
         <div class="second-wrapper container ">
 
@@ -72,7 +73,7 @@
     </section>
 
 
-    <section class="third">
+    <section class="third" data-aos="fade-up">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide shadow">
@@ -122,15 +123,15 @@
         </div>
     </section>
 
-    <!-- <div class="background-change"> -->
+    <div class="background-change">
 
 
-    <h3 class="intro"> <span class="gradient">Six Figure</span> Services</h3>
+    <h3 class="intro container" data-aos="fade-up"> <span class="gradient">Six Figure</span> Services</h3>
 
     <section class="fourth">
         <div class="fourth__grid container">
             <div class="services__list">
-                <div class="service">
+                <div class="service" data-aos="fade-up">
                     <div class="service__icon">
                         <img src="bucket.png" alt="">
                     </div>
@@ -144,7 +145,7 @@
                         </h5>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-up">
                     <div class="service__icon">
                         <img src="picture.png" alt="">
                     </div>
@@ -153,12 +154,12 @@
                     </div>
                     <div class="service__content">
                         <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut porro, accusantium
-                            adipisci
+                            adipici
                             quidem libero obcaecati consequuntur tempora voluptatem architecto cumque dolores quae
                         </h5>
                     </div>
                 </div>
-                <div class="service">
+                <div class="service" data-aos="fade-up">
                     <div class="service__icon">
                         <img src="rocket.png" alt="">
                     </div>
@@ -174,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="fourth__content">
+            <div class="fourth__content" data-aos="fade-up">
                 <h5 id="services-content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
                     facilis consequuntur natus,
                     repellendus expedita pariatur molestiae voluptas quis impedit dolore voluptatum ipsam odit
@@ -254,9 +255,9 @@
         </div>
     </section>
 
-    <h3 class="intro"> <span class="gradient">Six Figure</span> Questions</h3>
+    <h3 class="intro container" data-aos="fade-up"> <span class="gradient">Six Figure</span> Questions</h3>
 
-    <section class="faq">
+    <section class="faq" data-aos="fade-up">
         <div class=" accordion container">
 
             <div class="accordion__item shadow">
@@ -382,7 +383,7 @@
         </div>
     </section>
 
-    <section class="call__to__action">
+    <section class="call__to__action" data-aos="fade-up">
         <div class="call__card container shadow">
             <div class="call__left">
                 <form class="call__left" action="">
@@ -454,12 +455,18 @@
 
     </section>
 
-    <!-- </div> -->
+    </div>
 
     <script src=" https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+   <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
     <script>
         var typed = new Typed(".auto-type", {
             strings: ['design', 'interface', 'optimization', 'technology'],
