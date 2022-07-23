@@ -246,6 +246,14 @@ ul li a {
   width: 20px;
 }
 
+#learn-more-service {
+  margin-top: 2rem;
+  display: none;
+}
+#learn-more-service h5 {
+  font-weight: 400;
+}
+
 .nav__items li {
   margin-right: 3rem;
 }
@@ -389,6 +397,9 @@ body {
 }
 
 #learn-more {
+  background: none;
+}
+#learn-more-service {
   background: none;
 }
 
@@ -676,8 +687,12 @@ p {
     margin-top: 1rem;
   }
 
-  #services-content {
+  .fourth__content {
     display: none;
+  }
+
+  #learn-more-service {
+    display: flex;
   }
 }
 
