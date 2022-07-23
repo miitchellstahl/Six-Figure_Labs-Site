@@ -512,6 +512,10 @@ body {
     background: var(--secondary);
 }
 
+call__to__action {
+    z-index: 99;
+}
+
 
 h1 {
     font-size: 4.209rem;
