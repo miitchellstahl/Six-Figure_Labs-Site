@@ -714,6 +714,15 @@ p {
 
 @media only screen and (max-width: 450px) {
 
+    .card__paragraph h5 {
+        font-size: 1rem;
+    }
+
+    .swiper {
+        width: 225px;
+        height: 360px;
+    }
+
     .call__card {
         padding: 4rem 2rem;
     }
