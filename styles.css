@@ -508,9 +508,9 @@ body {
     text-align: start;
 }
 
-#lets-go:hover {
+/* #lets-go:hover {
     background: var(--secondary);
-}
+} */
 
 call__to__action {
     z-index: 99;
