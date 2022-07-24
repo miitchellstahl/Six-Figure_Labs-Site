@@ -709,7 +709,7 @@ p {
     background-color: rgba(24, 24, 24, 0.7);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     transition: transform 0.2s;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
