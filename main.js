@@ -46,8 +46,10 @@ window.addEventListener("load", function (window) {
 
   if (newWidth > 935) {
     logo.src = "6FLMainLogo.svg";
+    group.classList.remove("shadow");
   } else {
     logo.src = "LogoWhite.svg";
+    group.classList.add("shadow");
   }
 });
 
@@ -57,8 +59,10 @@ window.addEventListener("resize", function (window) {
   if (newWidth > 935) {
     mobileNav.classList.remove("is-active");
     hamburger.classList.remove("is-active");
+    group.classList.remove("shadow");
     logo.src = "6FLMainLogo.svg";
   } else {
     logo.src = "LogoWhite.svg";
+    group.classList.add("shadow");
   }
 });
