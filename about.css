@@ -1,3 +1,15 @@
+#services {
+  color: var(--black);
+}
+
+.mobile-nav a {
+  color: white;
+}
+
+#about {
+  color: var(--secondary);
+}
+
 .info__fact {
   width: 200px;
   height: 200px;
