@@ -1,0 +1,61 @@
+#about {
+  color: var(--black);
+}
+
+.mobile-nav a {
+  color: white;
+}
+
+#our-work {
+  color: var(--secondary);
+}
+
+.client__img {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.client__header {
+  display: flex;
+  justify-content: center;
+}
+
+.client__header a {
+  color: var(--black);
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 2.369rem;
+}
+
+.client__img img {
+  max-width: 80%;
+  height: auto;
+}
+
+.client__content {
+  margin-top: 2rem;
+}
+
+.client__content h4 {
+  font-weight: 400;
+}
+
+.client {
+  margin-top: 4rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.client:nth-child(1) {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .client__content h4 {
+    font-size: 1.33rem;
+  }
+}
