@@ -1,0 +1,39 @@
+#services {
+  color: var(--black);
+}
+
+.mobile-nav a {
+  color: white;
+}
+
+#our-work {
+  color: var(--black);
+}
+
+.catch-all-img {
+  display: flex;
+  justify-content: center;
+}
+
+.catch-all-img img {
+  width: 55%;
+  min-height: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#learn-more-service {
+  display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    font-size: 3rem;
+  }
+  .catch-all-img img {
+    width: 70%;
+    min-height: auto;
+  }
+}
