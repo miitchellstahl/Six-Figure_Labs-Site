@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Six Figure Labs</title>
+    <title>Six Figure Labs: Web Development & Web Design</title>
     <meta property="og:title" content="Six Figure Labs: Web Development & Web Design" />
     <meta property="og:description" content="Gain more business traction with a little help from Six Figure Labs"/>
     <meta property="og:image" content="openGraphBg.png" />
@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="about.css">
     <link rel="shortcut icon" type="image/png" href="SixFavicon.png" />
     <script src="nav.js" defer></script>
+    <script src="call-form.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
   rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
@@ -79,7 +81,7 @@
 
             <div class="info__fact shadow"data-aos="fade-up">
                 <div class="fact__heading">
-                    <h1>2+</h1>
+                    <h2 class = "info__num">2+</h2>
                 </div>
                 <div class="fact__subheading">
                     <h5>Years in Service</h5>
@@ -87,7 +89,7 @@
             </div>
             <div class="info__fact shadow"data-aos="fade-up">
                 <div class="fact__heading">
-                    <h1>10+</h1>
+                    <h2 class = "info__num">10+</h2>
                 </div>
                 <div class="fact__subheading">
                     <h5>Happy Customers</h5>
@@ -95,7 +97,7 @@
             </div>
             <div class="info__fact shadow"data-aos="fade-up">
                 <div class="fact__heading">
-                    <h1>0</h1>
+                    <h2 class = "info__num">0</h2>
                 </div>
                 <div class="fact__subheading">
                     <h5>Outsourced Employees</h5>
@@ -103,7 +105,7 @@
             </div>
             <div class="info__fact shadow " data-aos="fade-up">
                 <div class="fact__heading">
-                    <h1>100%</h1>
+                    <h2 class = "info__num">100%</h2>
                 </div>
                 <div class="fact__subheading">
                     <h5>Custom Designs</h5>
@@ -207,19 +209,26 @@
     </section>
  
  
- 
- 
- 
     <section class="call__to__action" data-aos="fade-up">
         <div class="call__card container shadow">
             <div class="call__left">
-                <form class="call__left" action="">
-                    <h1>Have a Project to
-                        Discuss?</h1>
-                    <h4 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, laborum eum debitis
+                <form class="call__left" action="https://formsubmit.co/ad3c79132844b0215ab41892bc07e55a" method ="POST" novalidate>
+                    <input type="hidden" name="_next" value = "http://127.0.0.1:5500/thanks.html">
+                    <input type="hidden" name="_subject" value="New lead!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_cc" value="tyler@sixfigurelabs.com">
+                    <h2 class = "call__heading">Have a Project to
+                        Discuss?</h2>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, laborum eum debitis
                         minus!
                     </h4>
+                    <div class="email-container">
                     <input type="email" name="Email" id="email-call" placeholder="Email">
+                    <i class="uil uil-check"></i>
+                    <i class="uil uil-exclamation"></i>
+                    <p>Error Message</p>
+                </div>
             </div>
 
             <div class="call__right">

@@ -40,7 +40,7 @@
 
 .name__box input {
   /* padding-right: 150px; */
-  width: 45%;
+  /* width: 50%; */
 }
 
 .form__heading {
@@ -54,6 +54,14 @@
 .name__box {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.first__name {
+  width: 90%;
+}
+.last__name {
+  width: 90%;
 }
 
 .left__contact a {
@@ -134,6 +142,54 @@
   margin-bottom: 2rem;
 }
 
+.form-control p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.form-control {
+  position: relative;
+}
+
+#form__phone {
+  width: 100%;
+}
+
+form i {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.form-control.success input {
+  border: 2px solid green;
+}
+.form-control.error input {
+  border: 2px solid #a4381c;
+}
+.form-control.success .uil.uil-check {
+  visibility: visible;
+  color: green;
+}
+.form-control.error .uil.uil-exclamation {
+  visibility: visible;
+  color: #a4381c;
+}
+
+.form-control.error p {
+  display: block;
+  color: #a4381c;
+}
+
+.uil-exclamation {
+  color: #a4381c;
+}
+
+.uil-check {
+  color: green;
+}
+
 @media only screen and (max-width: 1179px) {
   .background__color {
     height: 475px;
@@ -146,6 +202,12 @@
   .name__box {
     flex-direction: column;
     gap: 1rem;
+  }
+  .last__name {
+    width: 100%;
+  }
+  .first__name {
+    width: 100%;
   }
   .name__box input {
     width: 100%;

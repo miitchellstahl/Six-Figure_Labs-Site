@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="our-work.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="catch-all.css">
+    <link rel="stylesheet" href="thanks.css">
     <link rel="shortcut icon" type="image/png" href="SixFavicon.png" />
     <script src="nav.js" defer></script>
-    <script src="contact-form.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
   rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -25,8 +25,6 @@
 </head>
 
 <body>
-
-    <div class="background__color"></div>
 
     <section class="header">
         <div class="group">
@@ -68,94 +66,23 @@
         </div>
     </div>
     </section>
-    
-    <section class="second__form">
 
-        <div class="form__grid container">
-
-            <div class="form__left" data-aos="fade-right">
-        <h2 class="text-shadow">What are you waiting for?</h2>
-
-        <div class="left__contact">
-            <div class="left__contact__item">
-                <div class="left__contact__img shadow">
-                <img src="mail.svg" alt="">
-            </div>
-                <a href = "mailto:hello@sixfigurelabs.com" class = "text-shadow">hello@sixfigurelabs.com</a>
-            </div>
-            <div class="left__contact__item">
-                <div class="left__contact__img shadow">
-                <img src="phone.svg" alt="">
-            </div>
-                <a a href="tel:9545607452" class = "text-shadow">954-560-7452</a>
-            </div>
-        </div>
+    <section class="catch-all">
+        <div class="catch-all-wrapper container">
+        <h1 class="intro text-shadow">We will contact you soon!</h1>
+        <div class="catch-all-img">
+        <img src="Form.svg" alt="">
     </div>
-
-    <div class="form__left">
-        <div class="form__box shadow">
-        <div class="form__heading">
-            <h3 class = "text-shadow">Request a Quote</h3>
-        </div>
-
-        <form action="https://formsubmit.co/ad3c79132844b0215ab41892bc07e55a" class="contact__form" method ="POST" novalidate>
-            <input type="hidden" name="_next" value = "http://127.0.0.1:5500/thanks.html">
-            <input type="hidden" name="_subject" value="New lead!">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="box">
-        <p class = "title text-shadow">Name</p>
-            <div class="name__box">
-                <div class="form-control first__name">
-        <input type="text" name="First name" id="form__first-name" placeholder="First Name" class = "shadow" class = "shadow"required>
-        <i class="uil uil-check"></i>
-        <i class="uil uil-exclamation"></i>
-        <p>Error Message</p>
-    </div>
-
-    <div class="form-control last__name">
-        <input type="text" name="Last name" id="form__last-name" placeholder="Last Name" class = "shadow">
-        <i class="uil uil-check"></i>
-        <i class="uil uil-exclamation"></i>
-        <p>Error Message</p>
-    </div>
-    </div>
-
-    <p class = "title text-shadow">Email</p>
-
-    <div class="form-control email__box">
-        <input type="email" name="Email" id="form__email" placeholder ="Email" class = "shadow" required>
-        <i class="uil uil-check"></i>
-        <i class="uil uil-exclamation"></i>
-        <p>Error Message</p>
-    </div>
-    
-    <p class = "title text-shadow">Contact Number</p>
-    <div class="form-control number__box">
-        <input type="tel" name="Phone" id="form__phone" placeholder = "Phone Number" class = "shadow">
-        <i class="uil uil-check"></i>
-        <i class="uil uil-exclamation"></i>
-        <p>Error Message</p>
-    </div>
-
-    <button class="btn-gradient shadow">
+    <a href="./index.html" class="btn-gradient" id="learn-more-service">
         <div class="btn__text">
-            <h5 href="#">Submit</h5>
+            <h5>Go</h5>
         </div>
+        <h5> Home </h5>
         <img class="btn__icon" src="rightArrow.svg" alt="">
-    </button>
-
-    </form>
+    </a>
     </div>
-    </div>
-
-    </div>
-
-
 
     </section>
-
-
-    
 
 
     <section class="footer">
@@ -218,8 +145,8 @@
     
     <script>
         AOS.init({
-            duration: 600,
-            delay: 0,
+            duration: 1000,
+            delay: 600,
             once: true
         });
       </script>
@@ -236,4 +163,4 @@
     
     </body>
     
-    </html>
+    </html>    

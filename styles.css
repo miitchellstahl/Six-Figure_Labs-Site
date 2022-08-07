@@ -253,6 +253,11 @@ ul li a {
   transition: var(--transition);
 }
 
+.call__heading {
+  font-size: 4.209rem;
+  color: white;
+}
+
 .btn-outline:hover {
   background-color: var(--secondary);
 }
@@ -516,7 +521,7 @@ body {
   padding: 4rem 6rem;
 }
 
-.call__left h1,
+.call__heading,
 .call__left h4 {
   color: white;
   text-align: start;
@@ -560,19 +565,21 @@ body {
   height: 100%;
   width: 100%;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .footer__1 h5 {
   text-align: start;
 }
 
-#lets-go {
-  cursor: pointer;
-  transition: 1.5s ease-in-out;
-}
-
 #lets-go:hover {
-  background: var(--secondary);
+  opacity: 0.7;
+  /* background: var(--secondary); */
+  /* background: linear-gradient(
+    90deg,
+    rgba(174, 119, 219, 0.5) -16.39%,
+    rgba(235, 188, 116, 0.5) 121.85%
+  ); */
 }
 
 .mobile-nav {
@@ -631,6 +638,70 @@ p {
 
 .fourth {
   margin-top: 0;
+}
+
+.email-container {
+  width: 100%;
+  position: relative;
+}
+
+form input {
+  width: 100%;
+}
+
+/* #email-call {
+  position: relative;
+} */
+
+.call__left {
+  position: relative;
+}
+
+form i {
+  font-size: 2.5rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+form i {
+  top: 0.9rem;
+  right: 5px;
+}
+
+.call__left p {
+  display: none;
+}
+
+.call__left p {
+  margin-top: 1rem;
+}
+
+.call__left.success input {
+  border: 2px solid green;
+}
+.call__left.error input {
+  border: 2px solid #a4381c;
+}
+.call__left.success .uil.uil-check {
+  visibility: visible;
+  color: green;
+}
+.call__left.error .uil.uil-exclamation {
+  visibility: visible;
+  color: #a4381c;
+}
+
+.call__left.error p {
+  display: block;
+  color: #a4381c;
+}
+
+.uil-exclamation {
+  color: #a4381c;
+}
+
+.uil-check {
+  color: green;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -731,7 +802,7 @@ p {
     margin-bottom: 0;
   }
 
-  .call__left h1 {
+  .call__heading {
     text-align: center;
   }
 
@@ -821,7 +892,7 @@ p {
 }
 
 @media only screen and (max-width: 707px) {
-  .call__left h1 {
+  .call__heading {
     font-size: 2.369rem;
   }
 
@@ -856,7 +927,7 @@ p {
     padding: 4rem 2rem;
   }
 
-  .call__left h1 {
+  .call__heading {
     font-size: 2.369rem;
   }
 
