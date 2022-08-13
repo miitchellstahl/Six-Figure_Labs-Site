@@ -10,6 +10,8 @@
     <meta property="og:title" content="Six Figure Labs: Web Development & Web Design" />
     <meta property="og:description" content="Gain more business traction with a little help from Six Figure Labs"/>
     <meta property="og:image" content="openGraphBg.png" />
+    <link rel="stylesheet" href="dist/magic-mouse.css" />
+    <link rel="stylesheet" href="https://res.cloudinary.com/veseylab/raw/upload/v1597754760/magicmouse/magic-mouse-1.0.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="SixFavicon.png" />
     <script src="main.js" defer></script>
@@ -19,6 +21,7 @@
     <link
   rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1597754761/magicmouse/magic_mouse-1.0.js"></script>
 </head>
 
 <body>
@@ -31,14 +34,14 @@
                     <img id = "logo" src="" alt="">
                 </a>
                 <ul class="nav__items">
-                    <li><a id="home" href="./index.html">Home</a></li>
-                    <li><a id="services" href="./services.html">Services</a></li>
-                    <li><a id="about" href="./about.html">About</a></li>
-                    <li><a id="our-work" href="./our-work.html">Our Work</a></li>
+                    <li><a id="home" class = "magic-hover" href="./index.html">Home</a></li>
+                    <li><a id="services" class = "magic-hover" href="./services.html">Services</a></li>
+                    <li><a id="about" class = "magic-hover" href="./about.html">About</a></li>
+                    <li><a id="our-work" class = "magic-hover" href="./our-work.html">Our Work</a></li>
                 </ul>
             </div>
             <div class="nav__right">
-                <a href="./contact.html" class="btn-outline text-shadow" id="contact-button">
+                <a href="./contact.html" class="btn-outline text-shadow magic-hover magic-hover__square" id="contact-button">
                     <div class="btn__text">
                         <h5 href="./contact.html">Contact</h5>
                     </div>
@@ -75,7 +78,7 @@
             </p>
             <h4 class="second__content light text-shadow">We believe websites are the most powerful online marketing tool. Through UX and marketing strategies, we engineer websites that drive sales and increase your online presence. Let us create the best you.</h4>
 
-            <a href="./about.html" class="btn-gradient hvr-grow shadow">
+            <a href="./about.html" class="btn-gradient hvr-grow shadow magic-hover magic-hover__square">
                 <div class="btn__text">
                     <h5 href="#">Learn</h5>
                 </div>
@@ -458,6 +461,20 @@
             },
         });
     </script>
+
+<script type="text/javascript" src="dist/magic_mouse.js"></script>
+
+<script type="text/javascript">
+    options = {
+	"cursorOuter": "circle-basic",
+	"hoverEffect": "pointer-overlay",
+	"hoverItemMove": false,
+	"defaultCursor": false,
+	"outerWidth": 50,
+	"outerHeight": 50
+      };
+    magicMouse(options);
+</script>
 
 </body>
 

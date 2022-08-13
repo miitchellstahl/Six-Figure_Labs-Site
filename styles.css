@@ -497,6 +497,14 @@ body {
   );
 }
 
+body #magicMouseCursor {
+  border-color: var(--black);
+}
+
+body #magicPointer {
+  background: var(--black);
+}
+
 #learn-more {
   background: none;
 }
