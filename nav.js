@@ -20,11 +20,11 @@ let huge = document.querySelector(".huge");
 window.addEventListener("load", function (window) {
   loadWidth = document.documentElement.clientWidth;
 
-  // if (newWidth > 935) {
-  //   group.classList.remove("shadow");
-  // } else {
-  //   group.classList.add("shadow");
-  // }
+  if (newWidth > 935) {
+    group.classList.remove("shadow");
+  } else {
+    group.classList.add("shadow");
+  }
 
   if (pageYOffset > 35) {
     groupHeader.classList.add("nav-scrolled");
@@ -51,7 +51,7 @@ window.addEventListener("resize", function (window) {
     hamburger.classList.remove("is-active");
     group.classList.remove("shadow");
   } else {
-    group.classList.add("shadow2");
+    group.classList.add("shadow");
   }
 
   if (pageYOffset > 35) {
@@ -72,7 +72,7 @@ window.addEventListener("scroll", function () {
   console.log(pageYOffset);
   if (pageYOffset > 35) {
     groupHeader.classList.add("nav-scrolled");
-    groupHeader.classList.add("shadow2");
+    groupHeader.classList.add("shadow");
   } else {
     groupHeader.classList.remove("nav-scrolled");
     groupHeader.classList.remove("shadow");
