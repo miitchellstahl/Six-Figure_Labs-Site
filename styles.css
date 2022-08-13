@@ -1068,6 +1068,9 @@ form i {
 }
 
 @media only screen and (max-width: 450px) {
+  .circle {
+    display: none;
+  }
   .container {
     width: 95%;
   }
