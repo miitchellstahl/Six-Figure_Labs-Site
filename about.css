@@ -20,7 +20,7 @@
   border-radius: 10px;
   /* width: min-content;
   display: inline-block; */
-  background: linear-gradient(90deg, #ae77db -16.39%, #ebbc74 121.85%);
+  background: var(--brand-gradient);
   display: flex;
   flex-direction: column;
   justify-content: center;

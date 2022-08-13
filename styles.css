@@ -265,7 +265,7 @@ ul li a {
 .btn-gradient {
   margin: 0 auto;
   width: min-content;
-  background: linear-gradient(90deg, #ae77db -16.39%, #ebbc74 121.85%);
+  background: var(--brand-gradient);
   justify-content: flex-start;
   border-radius: 4px;
   display: flex;
