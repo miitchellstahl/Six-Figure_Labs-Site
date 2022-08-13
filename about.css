@@ -2,10 +2,6 @@
   color: var(--black);
 }
 
-.mobile-nav a {
-  color: white;
-}
-
 #about {
   color: var(--secondary);
 }

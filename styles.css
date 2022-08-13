@@ -154,7 +154,7 @@ section {
 }
 
 .header {
-  margin-top: 1.5rem;
+  z-index: 999;
 }
 
 .links {
@@ -439,6 +439,31 @@ body {
   margin-bottom: 2rem;
 }
 
+.header {
+  margin-top: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header {
+  margin-bottom: 10rem;
+}
+
+.header {
+  transition: background 350ms ease-in-out;
+}
+
+.nav-scrolled {
+  background: white;
+  margin-top: 0;
+  border-radius: 5px;
+}
+
+body {
+  margin-top: 8rem;
+}
+
 .fourth__grid {
   margin: 0 auto;
   display: grid;
@@ -497,12 +522,22 @@ body {
   );
 }
 
-body #magicMouseCursor {
-  border-color: var(--black);
+.circle {
+  position: absolute;
+  z-index: -999;
 }
 
-body #magicPointer {
-  background: var(--black);
+#yellow {
+  left: 1rem;
+  top: 8rem;
+}
+#red {
+  right: 1rem;
+  top: 30rem;
+}
+#purple {
+  right: 0;
+  top: 8rem;
 }
 
 #learn-more {
@@ -561,6 +596,10 @@ body #magicPointer {
       transparent
     )
     1;
+}
+
+.group {
+  padding: 1.5rem 1rem;
 }
 
 .accordion__icon img {
@@ -665,7 +704,7 @@ body #magicPointer {
 .mobile-nav a {
   margin-bottom: 1.5rem;
   font-weight: 400;
-  color: white;
+  color: var(--black);
 }
 
 #contact {
@@ -801,6 +840,21 @@ form i {
     font-size: 4.209rem;
   }
 
+  #yellow {
+    height: 400px;
+    width: auto;
+  }
+  #red {
+    height: 300px;
+    width: auto;
+    right: 1rem;
+    top: 20rem;
+  }
+  #purple {
+    height: 200px;
+    width: auto;
+  }
+
   .second__content {
     font-size: 1.77rem;
     width: 60%;
@@ -846,7 +900,7 @@ form i {
     margin-bottom: 9px;
     position: relative;
 
-    background-color: white;
+    background-color: var(--black);
     border-radius: 6px;
     z-index: 1;
 
@@ -856,15 +910,12 @@ form i {
   }
 
   .group {
-    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     z-index: 99;
     align-items: center;
-    background-color: rgba(24, 24, 24, 0.7);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: white;
     padding: 1rem;
     transition: transform 0.2s;
     border-bottom-left-radius: 10px;
@@ -873,6 +924,7 @@ form i {
 
   .header {
     margin-bottom: 8rem;
+    margin-top: 0;
   }
 
   .hamburger span:nth-child(3) {
@@ -888,19 +940,19 @@ form i {
   }
 
   #home:hover {
-    color: white;
+    color: var(--secondary);
   }
   #about:hover {
-    color: white;
+    color: var(--secondary);
   }
   #our-work:hover {
-    color: white;
+    color: var(--secondary);
   }
   #services:hover {
-    color: white;
+    color: var(--secondary);
   }
   #contact:hover {
-    color: white;
+    color: var(--secondary);
   }
 }
 
@@ -988,10 +1040,30 @@ form i {
     width: 100%;
     margin-bottom: 1.5rem;
   }
+  #yellow {
+    height: 400px;
+    width: auto;
+  }
+  #red {
+    height: 300px;
+    width: auto;
+    right: 1rem;
+    top: 25rem;
+  }
+  #purple {
+    top: 15rem;
+    height: 200px;
+    width: auto;
+  }
 }
 @media only screen and (max-width: 500px) {
   .huge {
     font-size: 2.4rem;
+  }
+  #purple {
+    top: 18rem;
+    height: 200px;
+    width: auto;
   }
 }
 
