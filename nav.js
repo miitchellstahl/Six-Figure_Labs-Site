@@ -51,7 +51,7 @@ window.addEventListener("resize", function (window) {
     hamburger.classList.remove("is-active");
     group.classList.remove("shadow");
   } else {
-    group.classList.add("shadow");
+    group.classList.add("shadow2");
   }
 
   if (pageYOffset > 35) {
@@ -72,7 +72,7 @@ window.addEventListener("scroll", function () {
   console.log(pageYOffset);
   if (pageYOffset > 35) {
     groupHeader.classList.add("nav-scrolled");
-    groupHeader.classList.add("shadow");
+    groupHeader.classList.add("shadow2");
   } else {
     groupHeader.classList.remove("nav-scrolled");
     groupHeader.classList.remove("shadow");
