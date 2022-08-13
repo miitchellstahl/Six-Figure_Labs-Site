@@ -20,11 +20,11 @@ let huge = document.querySelector(".huge");
 window.addEventListener("load", function (window) {
   loadWidth = document.documentElement.clientWidth;
 
-  if (newWidth > 935) {
-    group.classList.remove("shadow");
-  } else {
-    group.classList.add("shadow");
-  }
+  // if (newWidth > 935) {
+  //   group.classList.remove("shadow");
+  // } else {
+  //   group.classList.add("shadow");
+  // }
 
   if (pageYOffset > 35) {
     groupHeader.classList.add("nav-scrolled");
