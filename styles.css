@@ -913,7 +913,7 @@ form i {
     top: 0;
     right: 0;
     width: 100%;
-    z-index: 99;
+    /* z-index: 99; */
     align-items: center;
     background-color: white;
     padding: 1rem;
