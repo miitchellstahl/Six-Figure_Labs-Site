@@ -44,8 +44,6 @@ window.addEventListener("load", function (window) {
 window.addEventListener("resize", function (window) {
   newWidth = document.documentElement.clientWidth;
   newHeight = document.documentElement.clientHeight;
-  console.log(newHeight);
-  console.log(newWidth);
   if (newWidth > 935) {
     mobileNav.classList.remove("is-active");
     hamburger.classList.remove("is-active");
@@ -63,7 +61,6 @@ window.addEventListener("resize", function (window) {
   }
 
   if (newWidth < 935) {
-    // alert(newWidth);
     groupHeader.classList.remove("nav-scrolled");
     groupHeader.classList.remove("shadow");
   }
