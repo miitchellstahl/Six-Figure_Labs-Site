@@ -105,6 +105,10 @@
   margin-top: 8rem;
 }
 
+.under {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1000px) {
   .info__card__wrapper {
     grid-template-columns: repeat(2, 1fr);

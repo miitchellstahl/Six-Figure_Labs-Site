@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/our-work.css">
     <link rel="stylesheet" href="/css/catch-all.css">
-    <link rel="stylesheet" href="/css/thanks.css">
     <link rel="shortcut icon" type="image/png" href="/images/SixFavicon.png" />
-    <script src="../js/nav.js" defer></script>
+    <script src="/js/nav.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
   rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -30,7 +29,7 @@
         <div class="group">
         <div class="nav container">
             <div class="nav__left">
-                <a href="/index.html" class="nav__logo">
+                <a href = "/index.html" class="nav__logo">
                     <img id = "logo" src="/images/6FLMainLogo.svg" alt="">
                 </a>
                 <ul class="nav__items">
@@ -69,9 +68,35 @@
 
     <section class="catch-all">
         <div class="catch-all-wrapper container">
-        <h1 class="intro text-shadow">We will contact you soon!</h1>
+        <h1 class="intro text-shadow">Coming Soon!</h1>
         <div class="catch-all-img">
-        <img src="/images/Form.svg" alt="">
+            <section class="call__to__action" data-aos="fade-right">
+                <div class="call__card container shadow">
+                    <div class="call__left">
+                        <form class="call__left" action="https://formsubmit.co/ad3c79132844b0215ab41892bc07e55a" method ="POST" novalidate>
+                            <input type="hidden" name="_next" value = "http://127.0.0.1:5500/thanks.html">
+                            <input type="hidden" name="_subject" value="New lead!">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_cc" value="tyler@sixfigurelabs.com">
+                            <h2 class = "call__heading">Want a free consultation?</h2>
+                            <h4>We'd love to get a feel for your business and answer any questions, let's get to work!
+                            </h4>
+                            <div class="email-container">
+                            <input type="email" name="Email" id="email-call" placeholder="Email">
+                            <i class="uil uil-check"></i>
+                            <i class="uil uil-exclamation"></i>
+                            <p>Error Message</p>
+                        </div>
+                    </div>
+        
+                    <div class="call__right">
+                        <button id="lets-go" class="shadow">Let's Go!
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </section>
     </div>
     <a href="/index.html" class="btn-gradient" id="learn-more-service">
         <div class="btn__text">
